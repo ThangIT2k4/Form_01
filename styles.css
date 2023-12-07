@@ -284,7 +284,7 @@ form > .form-group {
     outline: none;
 }
 
-.form-group:last-child {
+form > .form-group:last-child {
     display: flex;
 }
 
