@@ -29,8 +29,18 @@ a {
 }
 
 .form {
-    padding: 20px 0px;
-    margin: 15px 0px;
+    padding: 10px 0px;
+    margin: 10px 0px;
+}
+
+.form-group:has(:invalid:not(:placeholder-shown)) .form--error {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contact-form:has(:invalid) [type="submit"] {
+    opacity: 0.5;
+    pointer-events: none;
 }
 
 .form__subject {
