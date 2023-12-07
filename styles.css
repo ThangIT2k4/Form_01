@@ -36,6 +36,7 @@ select {
     font-size: inherit;
     color: inherit;
     border: none;
+    outline: none;
 }
 
 .container {
