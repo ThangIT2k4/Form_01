@@ -308,9 +308,10 @@ form > .form-group:last-child {
 button[type="submit"] {
     margin-left: auto;
     max-width: 150px;
-    padding: 15px 30px;
+    padding: 15px 20px;
     font-size: 14px;
     font-weight: 300;
+    line-height: 20px;
     border-radius: 8px;
     background: #3e2093;
     color: #fff;
