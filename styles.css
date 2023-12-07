@@ -37,6 +37,8 @@ select {
     color: inherit;
     border: none;
     outline: none;
+    color: inherit;
+    -webkit-tap-highlight-color: transparent;
 }
 
 .container {
