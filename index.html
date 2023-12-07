@@ -190,18 +190,13 @@
                                 <label class="form__message" for="message">
                                     Message
                                 </label>
-                                <input
-                                    placeholder="Write your message..."
-                                    type="text"
+                                <textarea
+                                    class="message__content"
                                     name="comment"
                                     id="message"
                                     placeholder="Write your message"
-                                    hidden
-                                />
-                                <div
-                                    class="message__content"
-                                    contenteditable=""
-                                ></div>
+                                    oninput="onResize(this)"
+                                ></textarea>
                             </div>
 
                             <div class="form-group">
@@ -212,5 +207,11 @@
                 </div>
             </div>
         </section>
+        <script>
+            function onResize(e) {
+                e.style.height = "auto";
+                e.style.height = e.scrollHeight + 3 + "px";
+            }
+        </script>
     </body>
 </html>
