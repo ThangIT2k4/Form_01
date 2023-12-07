@@ -17,10 +17,20 @@ body {
 button {
     outline: none;
     border: none;
+    background: transparent;
 }
 
 a {
+    color: inherit;
     text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font-size: inherit;
+    color: inherit;
 }
 
 .container {
@@ -34,7 +44,6 @@ a {
 }
 
 .form-group:has(:invalid:not(:placeholder-shown)) .form--error {
-    opacity: 1;
     visibility: visible;
 }
 
@@ -123,7 +132,6 @@ a {
 }
 
 .form--error {
-    opacity: 0;
     visibility: hidden;
     padding: 5px 0px;
     font-size: 1.4rem;
@@ -207,8 +215,6 @@ a {
     font-size: 1.6rem;
     font-weight: 400;
     color: #000;
-    outline: none;
-    border: none;
     border-bottom: 2px solid #e4e4eb;
     transition: 1s;
 }
@@ -295,9 +301,6 @@ textarea::placeholder {
 .message__content {
     display: block;
     margin-top: 10px;
-    border: none;
-    outline: none;
-    resize: none;
     max-height: 200px;
 }
 
