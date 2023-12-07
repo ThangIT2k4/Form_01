@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form 01</title>
+        <link rel="stylesheet" href="./reset.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+            integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <section class="form">
+            <div class="container">
+                <div class="form__subject">
+                    <h1 class="form__title">Contact Us</h1>
+                    <p class="form__desc">
+                        Any question or remarks? Just write us a message!
+                    </p>
+                </div>
+                <div class="form__content">
+                    <div class="form__contact">
+                        <div class="contact__head">
+                            <h2>Contact Information</h2>
+                            <div class="contact__desc">
+                                Fill up the form and our Team will get back to
+                                you within 24 hours.
+                            </div>
+                        </div>
+                        <div class="contact__body">
+                            <div class="info">
+                                <span class="info__icon">
+                                    <i class="fa-solid fa-phone"></i>
+                                </span>
+                                <a href="#!" class="info__phone">
+                                    +0123 4567 8910
+                                </a>
+                            </div>
+                            <div class="info">
+                                <span class="info__icon">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </span>
+                                <a href="#!" class="info__email">
+                                    hello@flowbase.com
+                                </a>
+                            </div>
+                            <div class="info">
+                                <span class="info__icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </span>
+                                <a href="#!" class="info__address">
+                                    102 Street 2714 Don
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact__foot">
+                            <a href="#!" class="contact-icon">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </a>
+                            <a href="#!" class="contact-icon">
+                                <i class="fa-brands fa-twitter"></i>
+                            </a>
+                            <a href="#!" class="contact-icon">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="#!" class="contact-icon">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                        <div class="circle1"></div>
+                        <div class="circle2"></div>
+                    </div>
+                    <div class="contact-form">
+                        <form
+                            action="https://api-gateway.fullstack.edu.vn/action_page.php"
+                            method="post"
+                            autocomplete="off"
+                        >
+                            <div class="form__grid">
+                                <div class="form-group">
+                                    <label for="first-name">First Name</label>
+                                    <input
+                                        type="text"
+                                        name="first-name"
+                                        id="first-name"
+                                        placeholder="Enter First Name"
+                                        required
+                                    />
+                                    <p class="form--error">
+                                        Vui lòng không để trống thông tin
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="last-name">Last Name</label>
+                                    <input
+                                        type="text"
+                                        name="last-name"
+                                        id="last-name"
+                                        placeholder="Enter Last Name"
+                                        required
+                                    />
+                                    <p class="form--error">
+                                        Vui lòng không để trống thông tin
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Mail</label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        id="email"
+                                        placeholder="Enter Email"
+                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                                        required
+                                    />
+                                    <p class="form--error">
+                                        Email phải chỉ chứa các chứ a - z, A -
+                                        Z, @, .
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input
+                                        type="tel"
+                                        name="tel"
+                                        id="phone"
+                                        placeholder="Enter Phone Numbers"
+                                        pattern="^(0|\+?84)(3|5|7|8|9)[0-9]{8}$"
+                                        required
+                                    />
+                                    <p class="form--error">
+                                        Vui lòng nhập đúng số điện thoại
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label"
+                                    >What the of website do you need?
+                                </label>
+
+                                <input
+                                    class="work__radio"
+                                    type="radio"
+                                    name="work"
+                                    value="Web Design"
+                                    id="design"
+                                />
+                                <label class="work__label" for="design"
+                                    >Web Design</label
+                                >
+                                <input
+                                    class="work__radio"
+                                    type="radio"
+                                    name="work"
+                                    value="Web Development"
+                                    id="development"
+                                />
+                                <label class="work__label" for="development"
+                                    >Web Development</label
+                                >
+                                <input
+                                    class="work__radio"
+                                    type="radio"
+                                    name="work"
+                                    value="Logo Desin"
+                                    id="logo-design"
+                                />
+                                <label class="work__label" for="logo-design"
+                                    >Logo Design</label
+                                >
+                                <input
+                                    class="work__radio"
+                                    type="radio"
+                                    name="work"
+                                    value="Other"
+                                    id="other"
+                                />
+                                <label class="work__label" for="other">
+                                    Other
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form__message" for="message">
+                                    Message
+                                </label>
+                                <input
+                                    placeholder="Write your message..."
+                                    type="text"
+                                    name="comment"
+                                    id="message"
+                                    placeholder="Write your message"
+                                    hidden
+                                />
+                                <div
+                                    class="message__content"
+                                    contenteditable=""
+                                ></div>
+                            </div>
+
+                            <div class="form-group">
+                                <button type="submit">Send Message</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
